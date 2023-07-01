@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  padding: 15px;
+}
+
+.app {
+  margin: 0 auto;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.output {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #c2bfbf;
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
