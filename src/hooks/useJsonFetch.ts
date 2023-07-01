@@ -16,7 +16,7 @@ const useJsonFetch = ( url: string, opts: OptsType) => {
     setLoading(true);
     const fethData = async () => {
       try {
-        const response = await fetch(url);
+        const response = await fetch(url, opts);
         if (!response.ok) throw new Error('Error fetching');
         const result = await response.json();
         setData(result.status)
@@ -34,6 +34,7 @@ const useJsonFetch = ( url: string, opts: OptsType) => {
       setData('');
       setError('');
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [url]);
 
   return [data, loading, error]
